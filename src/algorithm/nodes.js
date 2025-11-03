@@ -129,6 +129,14 @@ export const markets = {
     name: "Textiles Stall",
     node: 104,
   },
+  CABBAGE_STALL: {
+    name: "Cabbage Stall",
+    node: 118
+  },
+  PEARL_STALL: {
+    name: "Pearl Stall",
+    node: 119
+  },
 };
 
 /**
@@ -231,8 +239,10 @@ export const edges = [
   { nodes: [20, 21], weight: 2.05 },
   { nodes: [20, 22], weight: 3.2 },
   { nodes: [20, 92], weight: 3.73 },
+  { nodes: [20, 118], weight: 3.2 },
 
   { nodes: [21, 92], weight: 2.18 },
+  { nodes: [21, 118], weight: 2.13 },
 
   {
     nodes: [22, 23],
@@ -401,11 +411,13 @@ export const edges = [
   { nodes: [67, 68], weight: 2.65 },
   { nodes: [67, 91], weight: 6.75 },
   { nodes: [67, 101], weight: 4.45 },
+  { nodes: [67, 119], weight: 4.33 },
 
   { nodes: [68, 69], weight: 3.15 },
   { nodes: [68, 70], weight: 8.54 },
   { nodes: [68, 113], weight: 5.65 },
   { nodes: [68, 116], weight: 8.27 },
+  { nodes: [68, 119], weight: 4.32 },
 
   { nodes: [69, 70], weight: 5.42 },
   { nodes: [69, 113], weight: 2.09 },
@@ -466,6 +478,9 @@ export const edges = [
   { nodes: [90, 95], weight: 7.59 },
 
   { nodes: [91, 95], weight: 4.39 },
+  { nodes: [91, 119], weight: 3.05 },
+
+  { nodes: [92, 118], weight: 1.8 },
 
   { nodes: [96, 97], weight: 5.35 },
   { nodes: [96, 98], weight: 2.83 },
